@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+  double a;
+  double b;
+  double c;
+  //outut
+  std::cout << "Enter a: ";
+  std::cin >>  a;
+  std::cout << "Enter b: ";
+  std::cin >> b;
+  std::cout << "Enter c: ";
+  std::cin >> c;
+  // definig delta (variable)
+  double delta = std::sqrt(b*b - 4*a*c);
+  //storing the roots
+  // root1
+  double root1 = (-b + delta )/ (2*a);
+  // root2
+  double root2 = (-b - delta ) / (2*a);
+  //outputs
+    std::cout << "Root 1 is: "<< root1<<"\n";
+    std::cout << "Root 2 is: "<< root2 << "\n";
+  
+}
